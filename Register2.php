@@ -11,7 +11,7 @@
      function registerUser() {
         global $connect, $name, $age, $username, $password;
         $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-        $statement = mysqli_prepare($connect, "INSERT INTO user (name, age, username, password) VALUES (?, ?, ?, ?)");
+        $statement = mysqli_prepare($connect, "INSERT INTO id3864140_in2tionmembers (name, age, username, password) VALUES (?, ?, ?, ?)");
         mysqli_stmt_bind_param($statement, "siss", $name, $age, $username, $passwordHash);
         mysqli_stmt_execute($statement);
         mysqli_stmt_close($statement);     
