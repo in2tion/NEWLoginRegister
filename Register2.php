@@ -1,7 +1,7 @@
 <?php
     require("85348.php");
 
-    $connect = mysqli_connect("localhost", "id3864140_85348", "85348", "id3864140_in2tionmembers");
+    $connect = mysqli_connect("169.0.164.179", "id3864140_85348", "85348", "id3864140_in2tionmembers");
     
     $name = $_POST["name"];
     $age = $_POST["age"];
